@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <style>
+        .project{
+            margin: 0;
+            
+        }
+  .logo_upper ul{
+     display: flex;
+     list-style-type: none;
+       
+     }
+    
+    .logo_upper ul li a,b{
+        display: block;
+        padding: 17px 43px;
+        font-size: 15px;
+       text-decoration: none;
+       color: black;
+
+    }
+     .logo_upper
+     {
+        border: 12px;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(242, 238, 232);
+     }
+     .nav ul{
+     display: flex;
+     list-style-type: none;
+       
+     }
+     .nav ul li a{
+        display: block;
+        padding: 3px 42px;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+    }
+    img
+    {
+        height: 10%;
+        width: 100%;
+    }
+    #red
+    {
+        color: red;
+    }
+    .box
+    {
+        border: 2px solid black;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        bottom: 550px;
+        left: 650px;
+        
+    }
+    .box h2 , p
+    {
+        margin: 10px;
+    }
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(119, 94, 94);
+   color: white;
+   text-align: center;
+   display: flex;
+   padding: 3px 172px;
+
+}
+#space {
+    padding: 0px 30px;
+ }
+ .nav ul li a:hover
+ {
+    color:blueviolet
+ }
+ .logo_upper ul li a:hover
+ {
+    color: blueviolet;
+ }
+    </style>
+</head>
+<body>
+    <div class="project">
+      <div class="logo_upper">
+        <ul>
+            <b>canvas</b>
+            <li><a id="side" href="#">Call US - 4554646464</a></li>
+            <li><a id="side" href="#">Email- unknown@gmail.com</a></li>
+            <li><a id= "side" href="#">We are open - Mon-Sat , 10AM to 6PM </a></li>
+          </ul>
+      </div>
+
+      <div class="nav">
+        <ul>
+            <li><a id="red" href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Investor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+      </div>
+        <img src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" alt="" height="100px">
+
+        <div class="box">
+            <h2>Welcome to Canvas</h2>
+            <p>Create just what you need for your website choose from wide range of element simple put them on your own canvas </p>
+        </div>
+        <div class="footer">
+            <p id="student">Student Name</p>
+            <p id="roll_no">University Roll-NO</p>
+            <p id="space">GLA University, Mathura</p>
+            <p id="date">date</p>
+          </div>
+    </div>
+    <script>
+        const student = document.getElementById("student").innerHTML="Devesh Sharma";
+        const roll = document.getElementById("roll_no").innerHTML="201500216";
+        var dt = new Date(); 
+        const dtt = dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+        const date = document.getElementById("date").innerHTML=dtt;
+    </script>
+</body>
+</html>
